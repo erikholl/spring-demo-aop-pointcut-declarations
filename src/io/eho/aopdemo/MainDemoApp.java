@@ -20,6 +20,8 @@ public class MainDemoApp {
 		
 		// call the business method for accountDAO
 		Account account = new Account();
+		account.setName("Madhu");
+		account.setLevel("Platinum");
 		boolean vip = true;
 		accountDAO.addAccount(account, vip);
 		accountDAO.doWork();
